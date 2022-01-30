@@ -1,11 +1,13 @@
 package ru.zubrilinartem.shoppinglist.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import ru.zubrilinartem.shoppinglist.activities.MainApp
+import ru.zubrilinartem.shoppinglist.activities.NewNoteActivity
 import ru.zubrilinartem.shoppinglist.databinding.FragmentNoteBinding
 import ru.zubrilinartem.shoppinglist.db.MainViewModel
 
@@ -17,7 +19,7 @@ class NoteFragment : BaseFragment() {
     }
 
     override fun onClickNew() {
-        TODO("Not yet implemented")
+        startActivity(Intent(activity, NewNoteActivity::class.java))
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
