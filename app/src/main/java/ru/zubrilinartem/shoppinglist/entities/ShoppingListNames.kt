@@ -18,5 +18,5 @@ data class ShoppingListNames(
     @ColumnInfo(name = "checkedItemsCounter")
     val checkedItemsCounter:  Int,
     @ColumnInfo(name = "itemsIds")
-    val itemsIds:  String,
+    val itemsIds:  String
 ): Serializable
